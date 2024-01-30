@@ -49,7 +49,6 @@ module.exports = {
       ultra: "3600px",
       short: { raw: "(min-height: 600px)" },
       medium: { raw: "(min-height: 700px)" },
-      
     },
   },
   safelist: [
