@@ -8,7 +8,7 @@ type Props = {
   commtower: number
   gold: number
   capture: number
-  coPower:  "superCOPower" | "COPower";
+  coPower:  "superCOPower" | "COPower" | "no-power";
 }
 
 export default function COCalculator({ co,coPower,capture,commtower,gold }: Props) {

@@ -187,7 +187,7 @@ const Match = ({ spriteData }: Props) => {
       <>
         <div className="@grid @grid-cols-12 @text-center @my-20 @mx-2">
           <div className="@col-span-12">
-            <Calculator player={players[0]}/>
+            <Calculator playerAttack={players[0]} playerDefend={players[1]}/>
           </div>
           <h3 className="@col-span-12">Scale</h3>
           <div className="@col-span-12 @p-2">

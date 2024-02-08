@@ -3,11 +3,12 @@ import type { PlayerInMatch } from "shared/types/server-match-state";
 
 
 type Props = {
-    player: PlayerInMatch
+    playerAttack: PlayerInMatch
+    playerDefend: PlayerInMatch
 }
 
-export default function Calculator({player}:Props) {
-
+export default function Calculator({playerAttack,playerDefend}:Props) {
+    console.log(playerAttack);
     return (<>
 
         <p>Calculator</p>
@@ -21,9 +22,9 @@ export default function Calculator({player}:Props) {
             </div>
 
 
-            <COCalculator gold={player.funds} co={player.coId.name} capture={10} commtower={1} coPower={false}/>
+            <COCalculator gold={playerAttack.funds} co={playerAttack.coId.name} capture={10} commtower={1} coPower={"no-power"}/>
 
-            <COCalculator gold={player.funds} co={player.coId.name} capture={10} commtower={1} coPower={false}/>
+            <COCalculator gold={playerDefend.funds} co={playerDefend.coId.name} capture={10} commtower={1} coPower={"no-power"}/>
 
 
             <div className="@col-span-6 @flex-row  @flex-initial @bg-bg-secondary">
